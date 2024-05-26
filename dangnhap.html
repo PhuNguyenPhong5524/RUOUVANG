@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <script src="https://kit.fontawesome.com/bcd15b30db.js" crossorigin="anonymous"></script>
+    
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body {
+            background-image: url('src/img/snapedit_1704649569502.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        form{
+            display: flex;
+            justify-content: center;
+            margin-top: 150px;
+        }
+        .box_form{
+        border: 2px solid #fff;
+        border-radius: 5px;
+        padding: 10px;
+        width: 510px;
+        height: 380px;
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+        background-image: url('src/img/snapedit_1704649569502.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 1020px 850px;
+        box-sizing: border-box;
+}
+
+       h1{
+        text-align: center;
+        color: #fff;
+       }
+       .face_gg{
+        display: flex;
+        font-size: 11.5px;
+        align-items: center;
+        color: #fff;
+       }
+       .face_gg div{
+        margin: 5px;
+       }
+       .face{
+        border: 1px solid black;
+        padding: 3px;
+        background: #0b5c91;
+        border-radius: 5px;
+       }
+       .face:hover{
+        background-color: #3374a0;
+       }
+        .face a{
+            color: #fff;
+            text-decoration: none;
+        }
+       .gg{
+        border: 1px solid black;
+        padding: 3px;
+        background: #45c6ee;
+        border-radius: 5px;
+       }
+       .gg:hover{
+        background-color: #8bdef7;
+       }
+       .gg a{
+        color: #fff;
+        text-decoration: none;
+       }
+       .or{
+        display: flex;
+        align-items: center;
+       }
+       .or div{
+        margin: 2px;
+       }
+       .text_or{
+        background: #fff;
+        padding: 8px;
+        border-radius: 18px;
+        color: black;
+        font-weight: 600;
+        font-size: 12px;
+       }
+       hr{
+        width: 50px;
+        color: black;
+        
+       }
+       .inpt{
+       
+        display: flex;
+        align-items: center;
+        position: relative;
+       }
+       .inpt input{
+        width: 250px;
+        height: 30px;
+        border-radius: 5px;
+        border: 2px solid black;
+       }
+       .inpt div i{
+        position: absolute;
+        border-left: 1px solid black;
+        padding: 3px;
+        margin-left: -22px;
+        margin-top: -10px;
+       }
+       .check_b{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #fff;
+        font-weight: 600;
+        font-size: 10.5px;
+       }
+       .check_box{
+        margin-top: 12px;
+       }
+       .forget{
+        transform: translateX(18px);
+       }
+       .forget a{
+        color: #fff; 
+        text-decoration: none;
+       }
+       .forget a:hover{
+        color: firebrick;
+        text-decoration: underline;
+       }
+        .btn1{
+            width: 251px;
+            height: 30px;
+            color: #fff;
+            font-weight: 600;
+            background-color: #0f5686;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn1:hover{
+            color:orangered;   
+            background: #336f96;
+        }
+        .btn2{
+            cursor: pointer;
+            width: 251px;
+            height: 30px;
+            color: #fff;
+            font-weight: 600;
+            border-radius: 5px;
+            background-color: orangered;
+        }
+        .btn2:hover{
+            background: rgb(255, 113, 62);
+            color: #0f5686;
+        }
+        input::placeholder{
+            transform: translateX(5px);
+            color: rgba(128, 128, 128, 0.588);
+        }
+           header{
+            display: none;
+        }
+        footer{
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="" onsubmit="return check()">
+        <div class="box_form">
+            <h1>Login</h1>
+            <div class="face_gg">
+                <div class="face"><i style="padding: 5px;" class="fa-brands fa-facebook"></i><a href="">Login with facebook</a></div>
+                <div class="gg"><i style="padding: 5px;" class="fa-brands fa-google"></i><a href="">Login with google</a></div>
+            </div>
+            <div class="or">
+                <div><hr></div>
+                <div class="text_or">Or</div>
+                <div><hr></div>
+            </div>
+            <div class="inpt">
+                <div><input type="text" id="email" name="email" placeholder="...@gmail.com"></div>
+                <div><i class="fa-solid fa-user"></i></div><br>
+            </div>
+            <div class="inpt">
+                <div><input type="password" id="password" name="password" placeholder="Enter password"></div>
+                <div><i class="fa-solid fa-lock"></i></div><br>
+            </div>
+            <div class="check_b">
+                <div style="display: flex;align-items: center;">
+                    <div style="transform: translateX(-23px);"><input style="cursor: pointer;" onclick="showPass()" class="checkbox" type="checkbox"></div>
+                    <div style="transform: translateX(-18px);"><label>Show Password</label></div>
+                </div>
+                <div class="forget"><a href="dangky.html"> Đăng ký tài khoản !</a></div>
+            </div>
+            <div class="btn">
+                <input class="btn1" type="submit" onclick="return check()" value="Login">
+            </div>
+            <div class="btn">
+                <a href="index.html"><input class="btn2" type="button" onclick="thoat()" value="Close"></a>
+            </div>
+        </div>
+    </form>
+            
+<script src="dist/login.js"></script>
+
+
+</body>
+</html>

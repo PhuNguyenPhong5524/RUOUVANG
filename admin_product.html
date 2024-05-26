@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <script src="https://kit.fontawesome.com/bcd15b30db.js" crossorigin="anonymous"></script>
+    <style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    background-color: #001c41;
+    color: #fff;
+    position: fixed;
+    padding: 20px;
+    z-index: 10;
+}
+.sidebar img{
+    margin-left: 70px;
+    margin-top: 16px;
+    
+}
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: -14px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 2px;
+}
+.sidebar p{
+    font-size: 14px;
+    text-align: center;
+}
+.sidebar hr{
+    border-bottom: 1px solid #f3a504;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: normal; 
+}
+.sidebar ul li a{
+    padding: 10px;
+}
+.sidebar ul li a:hover {
+    background-color: #fff;
+    color: #f3a504;
+    border-radius: 5px;
+}
+
+ul li.active {
+    background-color: #fff;
+    color: #f3a504;
+    border-radius: 5px;
+}
+
+ul li a.text_link {
+    color: #fff;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+i.fa-user::before {
+    color: #fff;
+}
+
+
+.main-content {
+    margin-left: 240px;
+    padding: 15px;
+    padding-top: 55px;
+    margin-bottom: 10px;
+}
+
+.main-content h1 {
+    color: #333;
+    font-size: 24px;
+}
+
+.main-content p {
+    color: #666;
+    font-size: 18px;
+}
+table {
+            width: 100%;
+            border-collapse: collapse;
+          
+        }
+        th, td {
+            border: 1px solid #d4cfcf;
+            padding: 8px;
+            text-align: center;
+            background: #ffffff;
+        }
+        th {
+            background-color:#d7d7d7;
+            color: black;
+            font-weight: 600;
+            
+        }
+        .box_btn{
+             display: flex;
+             justify-content: center;
+             height: 110px;
+             align-items: center;
+        }
+        button {
+    background-color: #f3a504;
+    color: #ffffff;
+    border: none;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px; 
+    
+}
+.nut1{
+    background: #f3a504;
+}
+.nut1:hover{
+    background: #ffd88a;
+}
+.nut2{
+    background: firebrick;
+}
+.nut2:hover{
+    background: rgb(254, 142, 142);
+}
+.menu{
+    z-index: 5;
+    position:fixed ;
+    width: 100%;
+    height: 40px;
+    background: #001c41;
+    box-shadow: 0px 4px 8px #58555590,
+0px 0px 1px #635f5feb,
+1px 1px 1px #0000001f,
+0px -1px 1px #0000001f;
+}
+.menu i{
+    padding: 8px;
+    color: #fff;
+    float: right;
+    margin-right: 20px;
+    margin-top: 5px;
+    background: #f3a504;
+}
+.title{
+    border: 0.1px solid #ffe1a5;
+    border-left: 8px solid #f3a504;
+    height: 40px;
+    margin-bottom: 15px;
+    box-shadow: 0px 4px 8px #58555590,
+0px 0px 1px #635f5feb,
+1px 1px 1px #0000001f,
+0px -1px 1px #0000001f;
+border-radius: 8px;
+}
+.title h1{
+    font-size: 18px;
+    margin-left: 20px;
+}
+.table_ct{
+    padding: 20px;
+    border: 0.1px solid #ffe1a5;
+    box-shadow: 0px 4px 8px #58555590,
+0px 0px 1px #635f5feb,
+1px 1px 1px #0000001f,
+0px -1px 1px #0000001f;
+border-radius: 8px;
+}
+.box_nut{
+    display: flex;
+    border-bottom:  1px solid #d4cfcf;
+    padding-bottom: 6px;
+    margin-top: -12px;
+}
+
+.btn1{
+    background: #f3a504;
+}
+.btn1:hover{
+    background: #ffd88b;
+}
+.btn2{
+    background: firebrick;
+}
+.btn2:hover{
+    background: rgb(254, 142, 142);
+}
+.so{
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.logout{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 340px;
+    align-items: center;
+    
+}
+.dieuhuong{
+    margin-left:97.5%;
+    margin-top: 680px;
+    font-size: 16px;
+    background: #58555590;
+    padding: 10px;
+    position: fixed;
+    z-index: 20;
+    border-radius: 5px;
+}
+.dieuhuong a{
+    color: #fff;
+}
+.dieuhuong a:hover{
+    color: #f3a504;
+}
+
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 20;
+    padding-left: 34%;
+    padding-top: 10%;
+    
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 12px;
+    border-radius: 10px;
+    width: 60%;
+    max-width: 500px;
+    background: #001c41;
+}
+
+#myForm {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    padding: 15px;
+    border-radius: 5px;
+}
+#submit{
+    font-weight: 600;
+    font-size: 16px;
+    color: black;
+}
+#myForm label {
+    margin-bottom: 10px;
+   
+}
+#myForm input{
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+#myForm select{
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+#myForm input[type="text"],
+#myForm input[type="file"] {
+    margin-bottom: 20px;
+}
+
+#myForm input[type="submit"] {
+    cursor: pointer;
+    height: 40px;
+    text-align: center;
+    background: #ffca5f;
+    color: #f0f0f0;
+}
+#myForm input[type="submit"]:hover {
+    cursor: pointer;
+    height: 40px;
+    text-align: center;
+    background: #f3a504;
+    color: #fff;
+}
+header{
+    display: none;
+}
+footer{
+    display: none;
+}
+    </style>
+</head>
+<body>
+    <div class="dieuhuong" ><a href="#main_content"><i class="fa-solid fa-arrow-up"></i></a></div>
+    <div class="sidebar">
+        <img src="src/img/user_admin.png"  width="60px" height="60px">
+        <h2 id="username"></h2>
+        <p>Chào mừng bạn trở lại</p>
+        <hr>
+        <ul >
+            <style>
+                ul li .text_link{
+                    color: #fff;
+                    text-decoration: none;
+                    list-style: none;
+                }
+                .fa-user::after{
+                    color: #fff;
+                }
+
+            </style>
+            <li onclick="activate(this)"> <i class="fa-solid fa-user"></i> <a  class="text_link" href="admin_categories.html">Quản lý danh mục</a></li>
+            <li onclick="activate(this)" style="border-radius: 5px ;"><i class="fa-solid fa-tag"></i> <a class="text_link" href="admin_product.html">Quản lý sản phẩm</a></li>
+            <li onclick="activate(this)"><i class="fa-solid fa-file-invoice"></i> <a  class="text_link" href="">Quản lý đơn hàng</a></li>
+            <li onclick="activate(this)"> <i class="fa-solid fa-user"></i> <a  class="text_link" href="admin_user.html">Quản lý tài khoản </a></li>
+          </ul>
+        <div class="logout" style="margin-top: 320px;">
+            <div>Logout</div>
+            <a onclick="logoutt()"><div style="background: #f3a504; padding: 10px;border-radius: 5px;cursor: pointer;"><i class="fa-solid fa-right-to-bracket"></i></div></a>
+        </div>
+    </div>
+    <div class="menu"><i class="fa-solid fa-share-from-square"></i></div>
+   
+    <div class="main-content" id="main_content">
+        <div class="title"><h1>Danh sách sản phẩm</h1></div>
+        <div class="table_ct">
+            <div class="box_nut">
+                <div><button onclick="showw()" class="nut1"><i class="fa-solid fa-plus"></i> Thêm sản phẩm</button></div>
+                <div><button class="nut2">Xóa sản phẩm</button></div>
+            </div>
+            <div class="so">Hiện có <strong style="border:  1px solid #d4cfcf; padding: 5px;" id="soSP">0</strong> sản phẩm <i style="font-size: 20px;" class="fa-solid fa-caret-down"></i></div>
+            <table >
+               <thead>
+                <tr>
+                    <th>Hình</th>
+                    <th>Mã</th>
+                    <th style="width: 300px;">Tên SP</th>
+                    <th style="width: 120px;">Giá</th>
+                    <th>Mô tả</th>
+                    <th style="width: 80px;">Danh mục</th>
+                    <th style="width: 100px;">Thao tác</th>
+                </tr>
+               </thead>
+                <tbody id="sp">
+                   
+                </tbody>
+                
+
+                <!-- Thêm các sản phẩm khác tại đây -->
+            </table>
+        </div>
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content" style="margin-top: -80px;">
+          <div id="myForm"  >
+            <h2 style="margin-top: -2px; text-align: center;">Thêm sản phẩm</h2>
+                <label for="hinh">Hình:</label>
+                    <input style="border: 1px solid gray; padding: 2px;cursor: pointer;border-radius: 5px;padding-top: 10px;padding-left: 10px;" type="file" id="hinh" name="hinh">
+                <label for="tenSP">Tên:</label>
+                    <input type="text" id="tenSP" name="tenSP">
+                <label for="Gia">Giá:</label>
+                    <input type="text" id="Gia" name="Gia">
+                <label for="moTa">Mô tả:</label>
+                <input type="text" id="moTa" name="moTa">
+                <label for="danhmuc">Danh mục:</label>
+                    <select name="danhmuc" class="danhmuc">
+                        <option value="1">Vang hồng</option>
+                        <option value="2">Vang đỏ</option>
+                        <option value="3">Vang trắng</option>
+                        <option value="4">Champagned</option>
+                    </select><br>
+            <input style="border: none;" type="submit" id="submit" value="THÊM">
+          </div>
+        </div>
+      </div>
+
+        <div id="myModal2" class="modal">
+            <div class="modal-content" style="margin-top: -80px;">
+            <div id="myForm" >
+                <h2 style="margin-top: -2px; text-align: center;">Sửa sản phẩm</h2>
+                    <label for="tenSP2">Tên:</label>
+                        <input type="text" id="tenSP2" name="tenSP2">
+                    <label for="hinh2">Hình:</label>
+                        <input style="border: 1px solid gray; padding: 2px;cursor: pointer;border-radius: 5px;padding-top: 10px;padding-left: 10px;" type="file" id="hinh2" name="hinh2">
+                    <label for="Gia2">Giá:</label>
+                        <input type="text" id="Gia2" name="Gia2">
+                    <label for="Gia2">Mô tả :</label>
+                        <input type="text" id="moTa2" name="moTa2">
+                    <label for="danhmuc2">Danh mục:</label>
+                        <select name="danhmuc2" class="danhmuc2">
+                            <option value="1">Vang hồng</option>
+                            <option value="2">Vang đỏ</option>
+                            <option value="3">Vang trắng</option>
+                            <option value="4">Champagned</option>
+                        </select><br>
+                <input style="border: none;" type="submit" id="submit2" value="CẬP NHẬT">
+            </div>
+            </div>
+       </div>
+   
+    
+    <script src="dist/admin_product.js"></script>
+
+</body>
+</html>

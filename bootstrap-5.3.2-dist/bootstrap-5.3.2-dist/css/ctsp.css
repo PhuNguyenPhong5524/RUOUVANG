@@ -1,0 +1,224 @@
+
+:root {
+    /**/
+    --text1-color:#b7a054; /*tone màu cho header__top-rigth*/
+    --text-color:#390023; /*tone màu cho header*/
+    --text2-coler:#b39851; /*tone màu cho nav*/
+    --text3-color:#db5b13; /*tone màu :hover*/
+    --text4-color:#b7a054; /*cart*/
+    --text5-color:#5f0724; /* background input search*/
+    --white-color: #ffffff;
+    
+    
+  }
+.container{
+    width: 80%;
+    
+}
+
+/*Hiển thị hình ảnh*/
+.box-anh_lon-nho{
+    display: flex;
+    height: 78.5vh;
+    top: 300px;
+
+}
+.box-anh_nho {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 35%;
+  
+    height: 150px;
+    margin-top: 140px;
+}
+.box-anh_nho img{
+    padding: 2px;
+    margin: 2px;
+    cursor: pointer;
+}
+.box-anh_nho img:hover{
+    border-radius: 5px;
+    transform: scale(120%);
+    transition: all 0.5s ease-in-out;
+    border: 2px solid var(--text3-color);
+}
+.box-anh_lon{
+    width: 500px;
+    margin-top: 50px;
+}
+
+.nut_muasam{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.nut_muasam button{
+    margin: 5px;
+    width: 100%;
+    padding: 6px;
+    color: #fff;
+    font-weight: 600;
+}
+.nut_muasam .btn1{
+    background: #ffff;
+    color: var(--text5-color);
+    border: 2px solid var(--text5-color);
+}
+.nut_muasam .btn1:hover{
+    background: var(--text2-coler);
+    border: 2px solid var(--text2-coler);
+    color: #ffff;
+}
+/*Thiết lập nội dung*/
+.box_content-sp h2{
+    padding-top: 10px;
+}
+.box_time_sale{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--text5-color);
+    border-radius: 15px;
+    width: 100%;
+}
+.thongtin_sach{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.thongtin_sach-2{
+    margin-right: 200px;
+}
+.star{
+    display: flex;
+    color:#5f0724;
+}
+.time_sale-thoigian{
+    display: flex;
+
+}
+.time_sale-thoigian img{
+    padding:4px;
+}
+.thoigian{
+    display: flex;
+    align-items: center;
+    background: #fff;
+ 
+
+    width: 63%;
+    border-radius: 10px;
+
+}
+.thoigian div p{
+    align-items: center;
+}
+.thoigian span,h5{
+    padding: 5px;
+}
+.thoigian span{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: var(--text1-color);
+    color: #fff;
+    font-size: 16px;
+}
+.box_solieu{
+    display: flex;
+    margin-top: 20px;
+    
+}
+.solieu-1 p{
+    background: #ffffff;
+    overflow: hidden;
+    color: #ffffff;
+    border-radius: 10px 0 0 10px;
+    text-align: center;
+    font-size: 12px;
+    height: 18px;
+}
+.solieu-2 p{
+    background: #b7a054b1;
+    border-radius: 0 10px 10px 0;
+    width: 160px;
+    text-align: center;
+    color: var(--white-color);
+    height: 18px;
+    font-size: 12px;
+}
+.box_giatien_left{
+    display: flex;
+}
+.box_giatien{
+    display: flex;
+    font-size:32px;
+    margin-top: 15px;
+    justify-content: space-between;
+}
+.giatien-1{
+    padding-right: 10px;
+    color: var(--text5-color);
+}
+.giatien-2{
+    font-size: 20px;
+}
+.giatien-3{
+    margin-left: 10px;
+    font-size: 18px;
+    border: 1px solid var(--text5-color);
+    border-radius: 10px;
+    padding: 4px;
+    color: #fff;
+    height: 35px;
+    background: var(--text5-color);
+}
+.icon_share{
+    float:right;
+    background: whitesmoke;
+    box-shadow: inset(#ff635f);
+    border-radius: 50%;
+    padding: 5px;
+    text-align: center;
+    width: 40px;
+    height: 41px;
+    font-size: 22px;
+    color: var(--text5-color);
+    cursor: pointer;
+}
+.icon_share:hover{
+    background: #fff;
+    color: #ffcfce;
+
+}
+.box_thongtin_vanchuyen{
+    display: flex;
+    font-size: 15px;
+    margin-top: 30px;
+    margin-left: 3px;
+}
+.thongtin_vanchuyen1{
+    margin-right: 30px;
+}
+.thongtin_vanchuyen2 a{
+    text-decoration: none;
+    font-weight: 550;
+}
+.box_soluong{
+    display: flex;
+    align-items: center;
+    margin-left: -5px;
+}
+.text_soluong{
+    padding-right: 76px;
+    margin-top: 20px; 
+    margin-left: 10px; 
+    
+}
+.btn-group button{
+    padding: 5px;
+    width: 30px;
+
+}

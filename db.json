@@ -1,0 +1,267 @@
+{
+  "category": [
+    {
+      "id": "1",
+      "tenDM": "Vang hồng"
+    },
+    {
+      "id": "2",
+      "tenDM": "Vang đỏ"
+    },
+    {
+      "id": "3",
+      "tenDM": "Vang trắng"
+    },
+    {
+      "tenDM": "Champagned",
+      "id": "4"
+    }
+  ],
+  "product": [
+    {
+      "id": "0",
+      "hinh": "src/img/vanghong1.png",
+      "tenSP": "BERINGER MAIN & VINE WHITE ZINFANDEL",
+      "Gia": "1.120",
+      "moTa": "Trong quá trình sản xuất Beringer’s White Zinfandel, hương vị tươi mát của những trái chín mọng, hoa quả vị chua và dưa lưới được tôn vinh, hòa quyện cùng những điểm nhấn tinh tế của nhục đấu khấu và đinh hương. Chất rượu trẻ trung này hoàn toàn có thể được thưởng thức riêng, hoặc dùng chung với đa dạng các món ăn.",
+      "XuatXu": " California",
+      "DoManh": "10%",
+      "DungTich": "750ml",
+      "id_Cate": 1
+    },
+    {
+      "id": "1",
+      "hinh": "src/img/vanghong2.png",
+      "tenSP": "Cote Mas Rose Aurore",
+      "Gia": "3.298",
+      "moTa": "Cote Mas Rose Aurore là chai rượu vang hồng được làm từ sự phối trộn giữa 3 giống nho là Grenache, Cinsault và Syrah. Những vườn nho đều được trồng trên đất đá sét và đất đá vôi, thừa hưởng khí hậu Địa Trung Hải",
+      "XuatXu": "Pháp",
+      "DoManh": "13%",
+      "DungTich": "750ml",
+      "id_Cate": 1
+    },
+    {
+      "id": "2",
+      "hinh": "src/img/vangdo1.png",
+      "tenSP": "WOLF BLASS HOUSE OF DRAGON FIRE & BLOOD CABERNET SAUVIGNON SHIRAZ",
+      "Gia": "1.090",
+      "moTa": "MÙI VỊ: Shiraz đóng góp vị ngọt trái cây phong phú, vừa miệng và đậm đà nhưng không kém phần thanh lịch, hương vị được tăng cường và trưởng thành nhờ nuôi ủ trong thùng gỗ sồi làm  cho rượu cấu trúc cân bằng tốt và Cabernet Sauvignon đem đến vị chát cùng hương vị kéo dài trong vòm miệng.",
+      "XuatXu": "Ý",
+      "DoManh": "14.5%",
+      "DungTich": "750ml",
+      "id_Cate": 2
+    },
+    {
+      "id": "3",
+      "hinh": "src/img/vangdo2.png",
+      "tenSP": "RƯỢU VANG MATUA PINOT NOIR",
+      "Gia": "3.920",
+      "moTa": "Không ai biết cũng chẳng ai hay, từ bao giờ Rượu vang Matua Pinot Noir Regional Range đã trở thành một loại thức uống thơm ngon, quan trọng và đầy ấn tượng, là món ăn không thể thiếu trên bàn tiệc vào mỗi dịp quan trọng của người dân New Zealand. Rượu chảy trong mình dòng máu đỏ của những trái nho Pinot Noir chất lượng với nồng độ cồn 14%.",
+      "XuatXu": "New Zealand",
+      "DoManh": "14%",
+      "DungTich": "750ml",
+      "id_Cate": 2
+    },
+    {
+      "id": "4",
+      "hinh": "src/img/vangdo3.png",
+      "tenSP": "RƯỢU VANG LINDEMAN'S PREMIER SELECTION SHIRAZ CABERNET",
+      "Gia": "2.330",
+      "moTa": "Rượu vang đỏ Úc Lindeman's Premier Selection Shiraz Cabernet, South Eastern. Rượu có màu đỏ ruby với những quả mọng màu đỏ tươi và chút tiêu trắng cay nhẹ, thân vừa phải với kết thúc mềm mại, tròn trịa.",
+      "XuatXu": "Úc",
+      "DoManh": "13.5%",
+      "DungTich": "750ml",
+      "id_Cate": 2
+    },
+    {
+      "id": "5",
+      "hinh": "src/img/vangdo4.png",
+      "tenSP": "RƯỢU VANG DR HENRY LINDEMAN'S GENTLEMAN'S COLLECTION SHIRAZ",
+      "Gia": "1.105",
+      "moTa": "Rượu vang đỏ Úc Dr Henry Lindeman's Gentleman's Collection Shiraz Batch N°5, South Eastern có màu đỏ như đậm với sắc tím, loại rượu này có hương thơm của quả mâm xôi với một chút gia vị ngọt ngào. Vòm miệng hào phóng đầy đủ thể hiện hương vị mận sang trọng được hỗ trợ trong cấu trúc tannin mềm khiến loại rượu này trở nên dễ uống.",
+      "XuatXu": "Úc",
+      "DoManh": "13.5%",
+      "DungTich": "750ml",
+      "id_Cate": 2
+    },
+    {
+      "id": "6",
+      "hinh": "src/img/vangdo5.png",
+      "tenSP": "RƯỢU VANG LINDEMAN'S BIN 99 PINOT NOIR",
+      "Gia": "4.266",
+      "moTa": "Rượu vang đỏ Úc Lindeman's Bin 99 Pinot Noir, South Eastern. Rượu có thân trung bình, mềm mại và thanh lịch. Màu đỏ thẫm sống động với quả anh đào và quả mọng, vanillin sồi đặc trưng và gợi ý của gia vị và cấu trúc tannin tốt cho độ dài đáng yêu.",
+      "XuatXu": "Úc",
+      "DoManh": "13.5%",
+      "DungTich": "750ml",
+      "id_Cate": 2
+    },
+    {
+      "id": "7",
+      "hinh": "src/img/vangdo6.png",
+      "tenSP": "Lindeman'S Bin 45",
+      "Gia": "3.789",
+      "moTa": "Lindeman’ s với hơn 175 năm truyền thống sản xuất rượu vang, một trong những thương hiệu quan trọng nhất của nước Úc, được ưu chuộng tại hơn 100 quốc gia bởi chất lượng xứng đáng, giá cả hợp lí. Một đại diện nhà Lindeman’s mang số hiệu 45 trong bộ sưu tập Bin được làm từ giống nho Cabernet Sauvignon với cấu trúc đậm đà, hương vị phong phú, nồng độ vừa phải cùng một diện mạo sang trọng.",
+      "XuatXu": "Châu Úc",
+      "DoManh": "13.5%",
+      "DungTich": "750ml",
+      "id_Cate": 2
+    },
+    {
+      "id": "8",
+      "hinh": "src/img/vangdo7.png",
+      "tenSP": "Lindeman'S Bin 40",
+      "Gia": "1.990",
+      "moTa": "Nhà rượu Lindeman’s được thành lập bởi tiến sĩ Henry Lindeman vào năm 1843 tại Hunter Valley, Úc. Henry Lindeman đã đặt nền móng vững chắc cho sự ra đời của nhà rượu Lindeman’s với triết lý - rượu vang tạo nên sự kết nối. Ngày nay Lindeman’s đã trở thành một trong những dòng vang phổ biến nhất thế giới, có mặt tại hơn 100 quốc gia khác nhau với nhiều phong cách đa đạng.",
+      "XuatXu": "Lindeman’s",
+      "DoManh": "13.5%",
+      "DungTich": "750ml",
+      "id_Cate": 2
+    },
+    {
+      "id": "9",
+      "hinh": "src/img/vangdo8.png",
+      "tenSP": "PENFOLDS KOONUNGA HILL CABERNET SAUVIGNON",
+      "Gia": "5.772",
+      "moTa": "Nhà rượu Lindeman’s được thành lập bởi tiến sĩ Henry Lindeman vào năm 1843 tại Hunter Valley, Úc. Henry Lindeman đã đặt nền móng vững chắc cho sự ra đời của nhà rượu Lindeman’s với triết lý - rượu vang tạo nên sự kết nối. Ngày nay Lindeman’s đã trở thành một trong những dòng vang phổ biến nhất thế giới, có mặt tại hơn 100 quốc gia khác nhau với nhiều phong cách đa đạng.",
+      "XuatXu": "South Eastern Australia",
+      "DoManh": "14%",
+      "DungTich": "750ml",
+      "id_Cate": 2
+    },
+    {
+      "id": "10",
+      "hinh": "src/img/vangdo9.png",
+      "tenSP": "BERINGER QUANTUM NAPA VALLEY RED BLEND",
+      "Gia": "6.965",
+      "moTa": "Hương thơm của trái cây đen và thảo mộc của rượu Beringer Quantum Napa Valley Red Blend được nâng đỡ bởi những nốt hương của gỗ sồi, gia vị, và trái cây khô. Mịn màng và tròn đầy trong từng ngụm, hương vị sô cô la và vị chát đượm mùi theo thời gian. Mặn mà và đầy cảm hứng, chất rượu này có thể được lưu giữ ít nhất 10 đến 15 năm.",
+      "XuatXu": "Bancroft, Chabot, Steinhauer, Vogt, Marston, Gamble, Home Vineyards.",
+      "DoManh": "15%",
+      "DungTich": "750ml",
+      "id_Cate": 2
+    },
+    {
+      "id": "11",
+      "hinh": "src/img/vangdo10.png",
+      "tenSP": "PENFOLDS MAX'S CABERNET SAUVIGNON",
+      "Gia": "1.306",
+      "moTa": "Max’s Cabernet Sauvignon có tất cả các đặc điểm nổi bật của giống nho Cabernet Sauvignon cao cấp của nước Úc, mạnh mẽ, hương vị trái cây đậm đà với hương thảo mộc và vị chát mạnh kéo dài. Giống như Shiraz, Max’s Cabernet Sauvignon dùng để thưởng thức khi rượu còn trẻ với hương thơm của gỗ sồi và vị chát hài hòa với hương vị trái cây của rượu.",
+      "XuatXu": "Bancroft, Chabot, Steinhauer, Vogt, Marston, Gamble, Home Vineyards.",
+      "DoManh": "14.5%",
+      "DungTich": "750ml",
+      "id_Cate": 2
+    },
+    {
+      "id": "12",
+      "hinh": "src/img/champagne1.png",
+      "tenSP": "Lindeman’s Bin 25 Brut Cuvée",
+      "Gia": "3.406",
+      "moTa": "Điều kiện cổ điển: Mùa phát triển dẫn đến mùa cổ điển năm 2017 đầy thách thức. Ẩm ướt và lạnh Mùa xuân ảnh hưởng đến sự phát triển chồi sớm, với mùa hè ôn hòa điều kiện bị gián đoạn bởi các sự kiện mưa. Một mùa thời tiết khắc nghiệt, đôi khi bị cô lập",
+      "XuatXu": "Úc",
+      "DoManh": "7%",
+      "DungTich": "750ml",
+      "id_Cate": 4
+    },
+    {
+      "id": "13",
+      "hinh": "src/img/champagne2.png",
+      "tenSP": "19 Crimes Blanc De Blanc",
+      "Gia": "2.808",
+      "moTa": "Blanc de Blancs được dịch là 'màu trắng của người da trắng' và để tạo ra loại rượu này, chúng tôi đã đánh cắp nho từ Hard Chard của mình, hái chúng ra khỏi cây sớm để giữ được độ giòn tươi và màu rơm nhạt của chúng. Một phong cách lấp lánh nhẹ nhàng, sạch sẽ và hào hứng, với một kết thúc sắc nét. Một loại rượu dễ thưởng thức theo nhiều cách. Khui một chai và ăn mừng với nhóm của bạn!",
+      "XuatXu": "Úc",
+      "DoManh": "14%",
+      "DungTich": "750ml",
+      "id_Cate": 4
+    },
+    {
+      "id": "14",
+      "hinh": "src/img/champagne3.png",
+      "tenSP": "WOLF BLASS RED LABEL PINK MOSCATO",
+      "Gia": "3.202",
+      "moTa": "Rượu có sủi bọt nhẹ của Úc làm từ nho Moscato, một trong những loại nho thơm phổ biến nhất, mang lại vị ngọt dịu và hương thơm trái cây. Rượu có độ chua giòn dịu, đầy lôi cuốn.",
+      "XuatXu": "South Australia",
+      "DoManh": "7%",
+      "DungTich": "750ml",
+      "id_Cate": 4
+    },
+    {
+      "id": "15",
+      "hinh": "src/img/champagne4.png",
+      "tenSP": "WOLF BLASS EAGLEHAWK CUVEE BRUT",
+      "Gia": "3.485",
+      "moTa": "Đây là chất rượu tròn vị, đậm vị táo và dưa lưới cùng vị mềm mại, kem mơ trên vòm miệng. Đầy hương vị và tươi mát, với hậu vị kéo dài.",
+      "XuatXu": "South Australia",
+      "DoManh": "12%",
+      "DungTich": "750ml",
+      "id_Cate": 4
+    }
+  ],
+  "user": [
+    {
+      "id": "1",
+      "name": "Nguyễn Phong Phú",
+      "email": "phu6257643@gmail.com",
+      "phone": "0837635394",
+      "password": "05052004",
+      "role": "1"
+    },
+    {
+      "id": "2",
+      "name": "Nguyễn Thanh Phú",
+      "email": "phu23@gmail.com",
+      "phone": "0837754537",
+      "password": "0909090909",
+      "role": "2"
+    },
+    {
+      "id": "2",
+      "name": "Nguyễn Phú Quý",
+      "email": "quy123@gmail.com",
+      "phone": "0837635394",
+      "password": "05052004",
+      "role": "2"
+    },
+    {
+      "name": "Phan Trọng Lâm",
+      "email": "nghia123@gmail.com",
+      "phone": "0345789346",
+      "role": "1",
+      "id": "3"
+    }
+  ],
+  "orders": [
+    {
+      "id": "1",
+      "customer_name": "Nguyễn Phú Quý",
+      "customer_address": "12/3 đường A, tỉnh N",
+      "customer_email": "quy123@gmail.com",
+      "customer_phone_number": "0837635394",
+      "created_date": "12/2/24",
+      "status": "Đã hoàn tất"
+    },
+    {
+      "id": "2",
+      "customer_name": "Nguyễn Thanh Phú",
+      "customer_address": "103 đường E, tỉnh N, thành phố S",
+      "customer_email": "phu23@gmail.com",
+      "customer_phone_number": "0837754537",
+      "created_date": "2/12/23",
+      "status": "Đã hoàn tất"
+    }
+  ],
+  "orders_details": [
+    {
+      "order_id": "1",
+      "product_id": "1",
+      "quantity": "5",
+      "unit_price": "6.000",
+      "id": "7454"
+    },
+    {
+      "order_id": "2",
+      "product_id": "2",
+      "quantity": "4",
+      "unit_price": "4.800",
+      "id": "3ae9"
+    }
+  ]
+}

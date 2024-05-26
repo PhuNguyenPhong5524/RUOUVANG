@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thư viện thành phố - HCM</title>
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/css/style.css">
+    <script src="https://kit.fontawesome.com/bcd15b30db.js" crossorigin="anonymous"></script>
+    <style>
+                  /* Giỏ hàng index */
+#box_aside {
+    background: #929292ba;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2002;
+    position: fixed;
+}
+#box_aside .giohang_index{
+    width: 500px;
+    height: 100%;
+    right: 0px;
+    position: absolute;
+    background: #fff;
+    z-index: 2002;
+   position: fixed;
+ }
+#close{
+    font-size: 30px;
+  
+    cursor: pointer;
+    float: right;
+    margin: 10px;
+}
+
+.box_đk_ft input{
+    height: 30px;
+    border: 2px solid black ;
+    border-radius: 5px;
+}
+.box_đk_ft button{
+    height: 34px;
+    border: 1px solid black;
+    background: black;
+    color: #fff;
+    border-radius: 5px;
+    
+}
+
+.cartItem2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2px;
+    padding-bottom: 5px;
+    border-bottom: 0.1px solid rgb(184, 184, 184);
+    justify-content: center;
+    width: 90%;
+}
+.cloes_tt{
+    font-size: 15px;
+    
+}
+.content_Item{
+    width: 280px;
+    padding: 10px;
+}
+.content_Item div{
+    line-height: 20px;
+}
+.btn_tg_sl{
+    display: flex;
+
+}
+.btn_tg_sl input{
+    width: 15px;
+    text-align: center;
+    border: 0.05 solid rgb(213, 213, 213);
+}
+.btn_tg_sl button{
+ 
+    background: rgb(175, 175, 175);
+    color: #fff;
+
+}
+#xoaspgh{
+    cursor: pointer;
+}
+
+
+.text{
+    background: rgb(234, 234, 234);
+    color: brown;
+    font-weight: 700;
+    border: 1px solid rgba(253, 253, 253, 0.144);
+    border-radius: 8px;
+    width: 11px;
+    padding: 2px 4px 2px 5px;
+    text-align: center;
+    right: 0;
+    top: 0;
+    margin-top: -10px;
+    position: absolute;
+    transform: translateX(5px);
+    
+  }
+  .giohang  img{
+     width: 30%;
+     height: auto;
+     font-size: 15px;
+    transform: translateX(-40px);
+  
+  }
+  .giohang input{
+    width: 70px;
+    outline: none;
+    text-align: center;
+  }
+  .giohang tbody tr td .chu{
+    font-size: 20px;
+    font-weight: 600;
+    
+  }
+  /* ************************************** */
+ 
+  .text_gh_index{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+        
+        }
+        #box_ic_vc{
+            display: block;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 10px;
+            
+        }
+        #icon_vc{
+            display: flex;
+            align-items: center;
+        }
+         .box_tt{
+            display: flex;
+            justify-content: space-between;
+            margin: 10px;
+        }
+        .btn_tt{
+            text-align: center;
+            margin: 18px;
+        }
+        .btn_tt button{
+            width: 100%;
+            height: 40px;
+            background: #f3a504;
+            font-size: 16px;
+            font-weight: 600;
+            color: #fff;
+            border:1px solid #f3a504;
+            cursor: pointer;
+        
+        }
+        .box_ct{
+            display: flex;
+            justify-content: space-between;
+            margin: 15px;
+        }
+        .box_ct a{
+            color: blue;
+        }
+        .box_ct a:hover{
+            color: red;
+        }
+        /* Box thông tin user */
+        .dropdown {
+            position: absolute;
+            display: inline-block;
+            z-index: 2000;
+        }
+
+        .dropdown-content {
+            display: none;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            padding: 12px 16px;
+            margin-top: 3px;
+            margin-left: -100px;
+            border-radius: 5px;
+            
+        }
+        .dropdown-content a{
+            text-decoration: none;
+            color: black;
+            font-weight: 600;
+            font-size: 15px;
+            padding-bottom: 2px;
+            
+        }
+        .dropdown-content a:hover{
+            border-bottom: 2px solid #f3a504;
+            
+        }
+        .dropdown:hover .dropdown-content,
+        .dropdown:hover .cn {
+            display: block;
+        }
+        .sc__phanloai-top2 {
+            margin-top: -80px;
+            display: flex;
+            color: #b39851;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            }
+            .sc__phanloai-content--hr2{
+            display: flex;
+            align-items: center;
+            }
+            .sc__phanloai-content--hr2 h2{
+            padding: 15px;
+            font-size: 26px;
+
+            }
+            hr{
+            border: 1.4px solid #dc3545;
+            height: 0.5px;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 24px;
+
+            }
+            .sc_phanloai-content p{
+            font-size: 18px;
+            text-align: justify;
+            }
+            .card-body a{
+            text-align: center;
+            }
+            .box_section{
+                margin: 100px;
+                transform: translateY(-100px);
+            }
+            .dropdown-divider{
+                width: 100%;
+            }
+
+    </style>
+</head>
+<body>
+    <aside>
+        <div id="box_aside" style="display: none;">
+            <div class="giohang_index">
+                    <div style=" border-bottom: 0.1px solid rgb(184, 184, 184);">
+                        <div class="text_gh_index" style="margin: 5px;">
+                            <div><h2>Giỏ hàng</h2></div>
+                            <div><i class="fa-solid fa-xmark" onclick="hide()" id="close"></i></div>
+                        </div>
+                        <div id="box_ic_vc" style="margin-left: 25px;">
+                            
+                        </div>
+                      
+                    </div>
+                  <div class="box_hiensp" style="overflow: auto; height: 430px;">
+                    <div id="hiensp" style="display: flex;justify-content: center;align-items: center;flex-direction: column;">
+                    
+                       
+                    </div>
+                </div>
+
+                
+                    <div id="box_tongtien" style="display: none;">
+                           <div class="box_tt" style="margin-top: 10px;">
+                            <div style="margin-left: 10px;font-size: 15px; font-weight: 600;">TỔNG TIỀN:</div>
+                            <div id="tt" style="margin-right: 12px;font-size: 20px; font-weight: 700;color: red;"></div>
+                           </div>
+                           <div class="btn_tt">
+                            <button>THANH TOÁN</button>
+                           </div>
+                           <div class="box_ct">
+                            <div><a href="giohang.html">Xem giỏ hàng</a></div>
+                            <div><a href="#">Khuyến mãi dành cho bạn</a></div>
+                           </div>
+                    </div>
+            </div>
+        </div>
+    </aside>
+    <header id="trangchu" >
+        <div class="header__top">
+          <ul class="header__top-rigth">
+              <li class="header__top-item">
+                  <a class="header__top-link" href="">Hotline: 123-456-7890</a>
+              </li>
+              <li class="header__top-item">
+                  <a class="header__top-link" href="">LIÊN HỆ</a>
+              </li>
+              <li class="header__top-item">
+                  <a class="header__top-link" href="">SERVICE</a>
+              </li>
+              <li class="header__top-item" >
+                  <a class="header__top-link" href="">BOLOG <i style="font-size: 10px;" class="fa-solid fa-angle-down"></i></a>
+              </li>
+              <li class="header__top-item">
+      
+                  <ul class="navbar-nav " style="z-index: 2000;">
+                    <li class="nav-item dropdown">
+                        <a id="username" class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-circle-user" id="icon_US"></i>
+                        </a>
+                      <ul class="dropdown-menu " >
+                        <li><a class="dropdown-item" href="dangnhap.html">Đăng nhập</a></li>
+                        <li><a class="dropdown-item" href="dangky.html">Đăng ký</a></li>
+                        <li><a class="dropdown-item" href="#">Thông tin tài khoản</a></li>
+                        <li><a class="dropdown-item" href="admin.html">Trang quản lí</a></li>
+                        <li><a class="dropdown-item" href="#">Lịch sử</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Đăng xuất</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+              </li>
+          </ul>
+        </div>
+        <div class="header__main">
+          <div class="header__logo" >
+              <a href="index.html"><img src="src/img/logo.png" alt="" ></a>
+          </div>
+  
+          <div class="header__search" >
+              <input type="text" placeholder="Bạn đang tìm kiếm sản phẩm gì???"></input>
+              <i style="position: absolute; font-size: 22px; margin-left: -30px ;margin-top: 9px; cursor: pointer;color: #b7a054;"  class="fa-solid fa-magnifying-glass"></i>
+          </div>
+  
+          <div class="header__cart" id="count">
+              <a style="color: #b7a054;"><i  onclick="show()" class="fa-solid fa-cart-shopping"></i></a>
+              <div id="sl" class="header__cart-quanlity">0</div>
+          </div>
+      </div>
+          <nav class="navbar navbar-expand-lg" id="menutreo">
+              <div class="container-fluid ">
+                <div class="menu" id="navbarSupportedContent">
+                  <ul class="nav__menu">
+                    <li class="nav__menu-top">
+                        <a href="index.html"><i class="fa-solid fa-house"></i> TRANG CHỦ</a>
+                    </li>
+    
+                    <li class="nav__menu-top">
+                        <a href="#uachuong">LOẠI VANG</a>
+                    </li>
+    
+                    <li class="nav__menu-top">
+                        <a href="#trangchu">XUẤT XỨ</a>
+                    </li>
+    
+                    <li class="nav__menu-top">
+                        <a href="">VÙNG LÀM VANG</a>
+                    </li>
+    
+                    <li class="nav__menu-top">
+                        <a href="">PHỤ KIỆN & QUÀ TẶNG</a>
+                    </li>
+                </ul>
+                </div>
+              </div>
+            </nav>
+  
+      </header>
+    </div>
+     <div style="margin: 10%;transform: translateY(-45px);">
+        <h2 style="font-weight: 700;"><i class="fa-solid fa-caret-right"></i> Giỏ hàng</h2>
+        <form action="" method="post"> 
+            <input type="hidden" name="SoSPThem" id="SoSPThem">
+            <input type="hidden" name="TongTien" id="TongTien">
+        <table class="table text-center" >
+            <thead>
+                <style>
+            
+                
+                </style>
+                <th>Ảnh</th>
+                <th class="text-start" style="padding-left: 180px;position: absolute;">Tên sản phẩm</th>
+                <th class="text-end"  style="transform: translateX(-20px);">Đơn Giá</th>
+                <th class="text-end" >SL</th>
+                <th class="text-end" style="transform: translateX(-10px);">Thành tiền</th>
+                <th>Hành động</th>
+                
+            </thead>
+            <tbody id="cart">
+                
+            </tbody>
+         
+
+        </table>
+        <!-- Button trigger modal -->
+        <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Xác nhận 
+        </button> -->
+
+        <!-- Modal -->
+            <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"  style="z-index: 2010;">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Xác nhận</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Bằng việc xác nhận mượn, tôi đồng ý với quy định và chi phí mượn sách của thư viện.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                    <button type="submit" class="btn btn-primary">Đồng ý</button>
+                </div>
+                </div>
+            </div>
+            </div> -->
+        </form>
+     </div>
+     <section class="sc__phanloai2" >
+        <div class="box_section">
+         <div class="sc__phanloai-top2">
+             <div class="sc__phanloai-content--hr2">
+                 <hr>
+                 <h2>Loại rượu liên quan</h2>
+                 <hr>
+             </div>
+             
+         </div>
+         <div class="col-md-12">
+             <div class="row" id="sp">
+                
+             </div> 
+         </div>
+        </div>
+     </section>
+
+    <footer id="uachuong">
+      <div id="footer">
+          <div class="boc-footer width1200px" >
+              <div class="footer__item">
+                      <div class="footer__item-icon">
+                          <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                      </div>
+                      <div class="footer__item-icon">
+                          <a href=""><i class="fa-brands fa-twitter"></i></a>
+                      </div>
+                      <div class="footer__item-icon">
+                          <a href=""><i class="fa-brands fa-pinterest-p"></i></a>
+                      </div>
+              </div>
+                 <div class="row footer__menu">
+                      <div class="footer__menu-doc col-md-3 ">
+                          <p>THÔNG TIN</p>
+                          <ul>
+                              <li><a href="">Thương hiệu</a></li>
+                              <li><a href="">Sản phẩm mới</a></li>
+                              <li><a href="">Sản phẩm đã xem</a></li>
+                              <li><a href="">So sánh sản phẩm</a></li>
+                          </ul>
+                      </div>
+
+                      <div class="footer__menu-doc col-md-3" style="border-left: 1px solid #530033;">
+                          <p>HIỂU VỀ RƯỢU</p>
+                          <ul>
+                              <li><a href="">Blog</a></li>
+                              <li><a href="">Hiểu về vang</a></li>
+                              <li><a href="">Khám phá điểm chill</a></li>
+                              <li><a href="">Thông báo</a></li>
+                          </ul>
+                      </div>
+
+                      <div class="footer__menu-doc col-md-3" style="border-left: 1px solid #530033; border-right: 1px solid #530033;">
+                          <p>VỀ CHÚNG TÔI</p>
+                          <ul>
+                              <li><a href="">Blog</a></li>
+                              <li><a href="">Hiểu về vang</a></li>
+                              <li><a href="">Khám phá điểm chill</a></li>
+                              <li><a href="">Thông báo</a></li>
+                          </ul>
+                      </div>
+
+                      <div class="footer__menu-doc col-md-3">
+                          <p>THÔNG TIN LIÊN HỆ</p>
+                          <ul>
+                              <li><a href=""><i class="fa-solid fa-house"></i> Thành phố Hồ Chí Minh</a></li>
+                              <li><a href=""><i class="fa-solid fa-envelope"></i> ruouvangTGVN24@gmail.com</a></li>
+                              <li><a href="">Hotline:</a></li>
+                              <li><a href="">123-456-7890</a>
+                          </li>
+                          </ul>
+                      </div>
+                 </div>
+
+
+          </div>
+      </div>
+</footer>
+    <script src="bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/js/menutreo.js"></script>
+    <script src="dist/product.js"></script>
+
+</body>
+</html>
+
