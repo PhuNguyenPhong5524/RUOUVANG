@@ -298,12 +298,12 @@ function show(): void {
 }
 
 function showCTProduct(productId: string): void {
-    window.location.href = `http://127.0.0.1:5500/chitietsp.html?id=${productId}`;
+    window.location.href = `/chitietsp.html?id=${productId}`;
     
 }
 function logout(): void {
     localStorage.removeItem('user');
-    window.location.href = "http://127.0.0.1:5500/index.html";
+    window.location.href = "/index.html";
     let iconElement = document.getElementById("icon_US");
     if(iconElement) {
         iconElement.style.display = "block";
